@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.kapt.plugin)
+    alias(libs.plugins.ksp.plugin)
     alias(libs.plugins.dagger.hilt.plugin)
 }
 
@@ -60,8 +61,8 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
 
     implementation(libs.dagger.hilt)
-    kapt(libs.hilt.compiler)
-    kapt(libs.androidx.hilt.compiler)
+    ksp(libs.hilt.compiler)
+    ksp(libs.androidx.hilt.compiler)
     implementation(libs.hilt.navigation.compose)
 
     implementation(libs.retrofit)
@@ -71,7 +72,7 @@ dependencies {
 
     implementation(libs.room.ktx)
     implementation(libs.room.paging)
-    kapt(libs.room.compiler)
+    ksp(libs.room.compiler)
 
     implementation(libs.coil)
 }

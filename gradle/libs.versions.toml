@@ -11,6 +11,7 @@ composeBom = "2025.03.01"
 
 daggerhilt = "2.51.1"
 kaptVersion = "1.6.20"
+kspVersion = "1.9.10-1.0.13"
 androidxhilt = "1.2.0"
 
 roomVersion = "2.6.1"
@@ -60,4 +61,5 @@ kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 dagger-hilt-plugin = { id = "com.google.dagger.hilt.android", version.ref = "daggerhilt" }
 kapt-plugin = { id = "org.jetbrains.kotlin.kapt", version.ref = "kaptVersion"}
+ksp_plugin = {id = "com.google.devtools.ksp", version.ref = "kspVersion"}
 
